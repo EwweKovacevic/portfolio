@@ -193,6 +193,35 @@ footer p {
 .project-link[data-image="img/project1.png"]:before {
   background-image: url("img/project1.png");
 }
+
+.placeholder {
+  display: block;
+  background-color: #191919;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.placeholder:hover {
+  background-color: #2D2D2D;
+}
+
+.placeholder:before {
+  content: "";
+  display: block;
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 0 0;
+}
+
+.placeholder[data-image="img/placeholder.png"]:before {
+  background-image: url("img/placeholder.png");
+}
     </style>
   <head>
     <title>My Portfolio</title>
@@ -206,23 +235,23 @@ footer p {
       <nav>
         <ul>
           <li><a href="/portfolio">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="/portfolio/portfolio.html">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/porfolio/aboutme">About</a></li>
+          <li><a href="/portfolio/portfolio">Portfolio</a></li>
+          <li><a href="/portfolio/contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <section id="portfolio">
       <h2>Portfolio</h2>
       <ul>
-        <li><a href="/portfolio/resolverhost.html" class="project-link" data-image="img/project1.png">
+        <li><a href="/portfolio/resolverhost" class="project-link" data-image="img/project1.png">
             <br>
               ResolverHost
             </a>
         </li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-        <li><a href="#">Project 4</a></li>
+        <li><a href="/portfolio/resolverhost" class="placeholder" data-image="img/1500x1500.png">Project 2</a></li>
+        <li><a href="/portfolio/resolverhost" class="placeholder" data-image="img/1500x1500.png">Project 3</a></li>
+        <li><a href="/portfolio/resolverhost" class="placeholder" data-image="img/1500x1500.png">Project 4</a></li>
       </ul>
     </section>
     <br>
